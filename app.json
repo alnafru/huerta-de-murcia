@@ -85,8 +85,8 @@
       {
         "id": "espectra-imagery-copilot",
         "label": "Copiloto espectral de la huerta de Murcia",
-        "bundlePath": "./runtime/behaviors/espectra-imagery-copilot-e79e68219eaf685f.js",
-        "sourceSha256": "e79e68219eaf685fdaf86be70f055096b66c88ae1ee331166f6ce6e2c8087ba4",
+        "bundlePath": "./runtime/behaviors/espectra-imagery-copilot-836a454142cbb1df.js",
+        "sourceSha256": "836a454142cbb1df724afd93911323691fc8271eb5ed53b5abb77ce5a223e8de",
         "modulePaths": [
           "esri/layers/support/rasterFunctionUtils",
           "esri/widgets/Swipe"
@@ -102,7 +102,7 @@
         ],
         "ownedLayerIds": [],
         "interactions": [],
-        "installedAt": "2026-10-30T11:28:30.929Z"
+        "installedAt": "2026-10-30T14:30:31.946Z"
       }
     ]
   },
