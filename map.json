@@ -16,24 +16,24 @@
   "baseMap": {
     "baseMapLayers": [
       {
-        "id": "dark-gray-base-layer",
+        "id": "gray-base-layer",
         "opacity": 1,
-        "title": "Dark Gray Base",
+        "title": "Light Gray Base",
         "visibility": true,
         "layerType": "VectorTileLayer",
-        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/5e9b3685f4c24d8781073dd928ebda50/resources/styles/root.json"
+        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/291da5eab3a0412593b66d384379f89f/resources/styles/root.json"
       },
       {
-        "id": "dark-gray-reference-layer",
+        "id": "gray-reference-layer",
         "opacity": 1,
-        "title": "Dark Gray Reference",
+        "title": "Light Gray Reference",
         "visibility": true,
         "layerType": "VectorTileLayer",
-        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/747cb7a5329c478cbe6981076cc879c5/resources/styles/root.json",
+        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/1768e8369a214dfab4e2167d5c5f2454/resources/styles/root.json",
         "isReference": true
       }
     ],
-    "title": "Lona gris oscuro"
+    "title": "Lona gris claro"
   },
   "authoringApp": "ArcGIS API for JavaScript",
   "authoringAppVersion": "5.1",
