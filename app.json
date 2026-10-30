@@ -1,0 +1,126 @@
+{
+  "version": "0.3",
+  "kind": "app",
+  "generatedAt": "2026-10-30T08:55:57.114Z",
+  "item": {
+    "title": "Espectra · Huerta de Murcia",
+    "subtitle": "Explora verdor y cambios estacionales en la huerta metropolitana con Sentinel‑2, sin confundir indicadores con diagnósticos."
+  },
+  "map": {
+    "type": "webmap",
+    "path": "./map.json"
+  },
+  "app": {
+    "template": "nova-app",
+    "preset": "analysis",
+    "showHeader": true,
+    "theme": {
+      "mode": "dark",
+      "accent": "default"
+    },
+    "layout": {
+      "left": {
+        "hidden": false,
+        "title": "Copiloto espectral",
+        "collapsed": false,
+        "blocks": [
+          {
+            "type": "customMount",
+            "id": "copilot"
+          }
+        ]
+      },
+      "right": {
+        "hidden": false,
+        "title": "Laboratorio temporal",
+        "collapsed": false,
+        "blocks": [
+          {
+            "type": "customMount",
+            "id": "temporal"
+          }
+        ]
+      },
+      "footer": {
+        "hidden": false,
+        "collapsed": false,
+        "blocks": [
+          {
+            "type": "text",
+            "id": "provenance",
+            "content": "Sentinel‑2 L1C · ESA / Comisión Europea / AWS / Esri · NDVI y NDWI son indicadores exploratorios, no diagnóstico ni clasificación de cultivos. Nubosidad informada por escena, no máscara por píxel.",
+            "format": "plain"
+          }
+        ]
+      }
+    },
+    "widgets": [
+      {
+        "id": "home",
+        "type": "home",
+        "slot": "top-left",
+        "config": {}
+      },
+      {
+        "id": "legend",
+        "type": "legend",
+        "slot": "bottom-left",
+        "config": {}
+      },
+      {
+        "id": "default-layer-list",
+        "type": "layerList",
+        "slot": "top-right",
+        "config": {}
+      },
+      {
+        "id": "default-basemap-gallery",
+        "type": "basemapGallery",
+        "slot": "top-right",
+        "config": {}
+      }
+    ],
+    "interactions": [],
+    "behaviors": [
+      {
+        "id": "espectra-imagery-copilot",
+        "label": "Copiloto espectral de la huerta de Murcia",
+        "bundlePath": "./runtime/behaviors/espectra-imagery-copilot-e79e68219eaf685f.js",
+        "sourceSha256": "e79e68219eaf685fdaf86be70f055096b66c88ae1ee331166f6ce6e2c8087ba4",
+        "modulePaths": [
+          "esri/layers/support/rasterFunctionUtils",
+          "esri/widgets/Swipe"
+        ],
+        "config": {
+          "imageryLayerId": "1a18c07c926-layer-54",
+          "serviceUrl": "https://sentinel.arcgis.com/arcgis/rest/services/Sentinel2/ImageServer",
+          "areaName": "Huerta metropolitana de Murcia"
+        },
+        "mounts": [
+          "copilot",
+          "temporal"
+        ],
+        "ownedLayerIds": [],
+        "interactions": [],
+        "installedAt": "2026-10-30T11:28:30.929Z"
+      }
+    ]
+  },
+  "nova": {
+    "basename": "59cd08f1-4697-4df9-b293-347a9796ec41",
+    "presentationMode": "app",
+    "ownedGraphicsLayerIds": [],
+    "origin": {
+      "portalUrl": "https://www.arcgis.com",
+      "mapId": "output-aca728d0-e059-4d7b-85c4-a479c6aae996",
+      "mapName": "New Conversation",
+      "viewMode": "2d",
+      "capturedAt": "2026-10-30T08:55:57.112Z"
+    },
+    "sourceSelection": {
+      "mode": "all"
+    },
+    "unsupportedLayers": [],
+    "degradedFeatures": []
+  }
+}

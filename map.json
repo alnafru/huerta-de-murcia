@@ -1,0 +1,62 @@
+{
+  "operationalLayers": [
+    {
+      "id": "1a18c07c926-layer-54",
+      "title": "Sentinel-2 · Procesamiento dinámico",
+      "url": "https://sentinel.arcgis.com/arcgis/rest/services/Sentinel2/ImageServer",
+      "visibility": true,
+      "renderingRule": {
+        "rasterFunction": "Natural Color with DRA"
+      },
+      "itemId": "fd61b9e0c69c4e14bebd50a9a968348c",
+      "layerType": "ArcGISImageServiceLayer",
+      "blendMode": "normal"
+    }
+  ],
+  "baseMap": {
+    "baseMapLayers": [
+      {
+        "id": "dark-gray-base-layer",
+        "opacity": 1,
+        "title": "Dark Gray Base",
+        "visibility": true,
+        "layerType": "VectorTileLayer",
+        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/5e9b3685f4c24d8781073dd928ebda50/resources/styles/root.json"
+      },
+      {
+        "id": "dark-gray-reference-layer",
+        "opacity": 1,
+        "title": "Dark Gray Reference",
+        "visibility": true,
+        "layerType": "VectorTileLayer",
+        "styleUrl": "https://cdn.arcgis.com/sharing/rest/content/items/747cb7a5329c478cbe6981076cc879c5/resources/styles/root.json",
+        "isReference": true
+      }
+    ],
+    "title": "Lona gris oscuro"
+  },
+  "authoringApp": "ArcGIS API for JavaScript",
+  "authoringAppVersion": "5.1",
+  "spatialReference": {
+    "latestWkid": 3857,
+    "wkid": 102100
+  },
+  "timeZone": "system",
+  "version": "2.37",
+  "initialState": {
+    "viewpoint": {
+      "targetGeometry": {
+        "spatialReference": {
+          "latestWkid": 3857,
+          "wkid": 102100
+        },
+        "xmin": -141770.81628763882,
+        "ymin": 4550622.709135877,
+        "xmax": -109820.1384644229,
+        "ymax": 4604587.251105232
+      },
+      "scale": 288895.27714450005,
+      "rotation": 0
+    }
+  }
+}
